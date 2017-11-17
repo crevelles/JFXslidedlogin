@@ -22,27 +22,32 @@
             <DropShadow color="#797979" />
          </effect>
          <children>
-            <JFXButton layoutX="47.0" layoutY="244.0" prefHeight="36.0" prefWidth="213.0" style="-fx-background-color: #59A4A7; -fx-background-radius: 10PX;" text="GET STARTED" textFill="WHITE">
+            <JFXButton layoutX="47.0" layoutY="262.0" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: #59A4A7; -fx-background-radius: 10PX;" text="GET STARTED" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXTextField alignment="CENTER" focusColor="#53948300" labelFloat="true" layoutX="47.0" layoutY="126.0" maxWidth="213.0" minWidth="184.0" prefHeight="36.0" prefWidth="213.0" promptText="USERNAME" style="-fx-border-color: #59A4A7; -fx-border-radius: 10px;" unFocusColor="#4b9e8c00">
+            <JFXTextField alignment="CENTER" focusColor="#53948300" labelFloat="true" layoutX="47.0" layoutY="137.0" maxWidth="213.0" minWidth="184.0" prefHeight="36.0" prefWidth="213.0" promptText="USERNAME" style="-fx-border-color: #59A4A7; -fx-border-radius: 10px;" unFocusColor="#4b9e8c00">
                <padding>
                   <Insets left="10.0" top="10.0" />
                </padding>
             </JFXTextField>
-            <JFXPasswordField alignment="CENTER" focusColor="#405aa800" labelFloat="true" layoutX="47.0" layoutY="179.0" maxWidth="213.0" minWidth="192.0" prefHeight="36.0" prefWidth="213.0" promptText="PASSWORD" style="-fx-border-color: #59A4A7; -fx-border-radius: 10PX;" unFocusColor="#4d4d4d00">
+            <JFXPasswordField alignment="CENTER" focusColor="#405aa800" labelFloat="true" layoutX="47.0" layoutY="196.0" maxWidth="213.0" minWidth="192.0" prefHeight="36.0" prefWidth="213.0" promptText="PASSWORD" style="-fx-border-color: #59A4A7; -fx-border-radius: 10PX;" unFocusColor="#4d4d4d00">
                <padding>
                   <Insets left="10.0" top="10.0" />
                </padding>
             </JFXPasswordField>
-            <JFXButton layoutX="47.0" layoutY="298.0" prefHeight="36.0" prefWidth="213.0" text="FORGOT YOUR PASSWORD ?" textFill="#1f767c" underline="true" />
-            <ImageView fitHeight="101.0" fitWidth="172.0" layoutX="103.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <JFXButton layoutX="47.0" layoutY="322.0" prefHeight="36.0" prefWidth="213.0" text="FORGOT YOUR PASSWORD ?" textFill="#1f767c" underline="true" />
+            <ImageView fitHeight="101.0" fitWidth="172.0" layoutX="103.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@login.png" />
                </image>
             </ImageView>
+            <JFXButton id="btnSalir" fx:id="btnCerrar" layoutX="166.0" layoutY="262.0" onAction="#cerrar" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: #59A4A7; -fx-background-radius: 10PX;" text="EXIT" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
          </children>
       </Pane>
    </children>

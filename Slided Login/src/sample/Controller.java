@@ -3,9 +3,12 @@ package sample;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.awt.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -90,5 +93,10 @@ public class Controller implements Initializable {
 
         });
 
+    }
+   
+    @FXML
+    private void cerrar() {
+   	    System.exit(0);
     }
 }
