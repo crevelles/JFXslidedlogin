@@ -37,7 +37,7 @@
                   <Insets left="10.0" top="10.0" />
                </padding>
             </JFXPasswordField>
-            <JFXButton layoutX="47.0" layoutY="322.0" prefHeight="36.0" prefWidth="213.0" text="FORGOT YOUR PASSWORD ?" textFill="#1f767c" underline="true" />
+            <JFXButton layoutX="47.0" layoutY="322.0" onAction="#abrirVentana" prefHeight="36.0" prefWidth="213.0" text="FORGOT YOUR PASSWORD ?" textFill="#1f767c" underline="true" />
             <ImageView fitHeight="101.0" fitWidth="172.0" layoutX="103.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@login.png" />

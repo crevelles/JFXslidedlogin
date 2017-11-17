@@ -2,17 +2,26 @@ package sample;
 
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.ImageCursor;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 import java.awt.Button;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+
+
+
+public class Controller  implements Initializable{
 
     @FXML
     private Pane pane1;
@@ -99,4 +108,26 @@ public class Controller implements Initializable {
     private void cerrar() {
    	    System.exit(0);
     }
+    
+    
+    @FXML
+	 public void abrirVentana() {
+	        try {
+	            FXMLLoader loader = new FXMLLoader();
+	            loader.setLocation(Main.class.getResource("forgetPassword.fxml"));
+	            AnchorPane page = (AnchorPane) loader.load();
+	            Stage sendStage = new Stage();
+	            sendStage.setTitle("Superheader");
+	            Scene scene = new Scene(page);
+	            sendStage.setScene(scene);
+	            sendStage.initStyle(StageStyle.UNDECORATED);
+	            sendStage.show();
+	           
+
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	 
+    
 }
